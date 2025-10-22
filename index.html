@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yash Prajapati —  Portfolio</title>
+<title>Yash Prajapati — Portfolio</title>
 
 <!-- SEO Meta Tags -->
 <meta name="description" content="Yash Prajapati - AI-powered freelance web developer & designer. Professional portfolio showcasing projects, web design, and creative coding services.">
@@ -12,181 +12,62 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://pixcelyash.space/">
 
-<!-- Open Graph for Social -->
+<!-- Open Graph -->
 <meta property="og:title" content="Yash Prajapati — Professional Portfolio">
 <meta property="og:description" content="AI-powered freelance web developer & designer. Check my portfolio and hire me.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pixcelyash.space/">
 <meta property="og:image" content="https://pixcelyash.space/cover-image.jpg">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Yash Prajapati — Professional Portfolio">
-<meta name="twitter:description" content="AI-powered freelance web developer & designer. Check my portfolio and hire me.">
-<meta name="twitter:image" content="https://pixcelyash.space/cover-image.jpg">
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Yash Prajapati",
-  "url": "https://pixcelyash.space",
-  "sameAs": [
-    "https://www.linkedin.com/in/YashPrajapati",
-    "https://github.com/Yash817"
-  ],
-  "jobTitle": "AI-Powered Freelance Web Developer & Designer",
-  "image": "https://yourdomain.com/profile-photo.jpg",
-  "telephone": "+919120920817",
-  "email": "pjyashofficial@gmail.com"
-}
-</script>
-
-<!-- Fonts & GSAP -->
 <link href="https://fonts.cdnfonts.com/css/fall-is-coming" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-body{
-  background:#07070f;
-  font-family:'Inter', sans-serif;
-  overflow-x:hidden;
-  color:#fff;
-}
-
-/* Header */
-header{
-  position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;
-  padding:15px 5%;backdrop-filter:blur(20px);z-index:1000;
-  background:rgba(0,0,0,0.7);border-bottom:1px solid rgba(255,255,255,0.1);
-}
-header h1{font-family:'Fall is Coming', sans-serif;color:#00ffcc;font-weight:700;font-size:2rem;}
+body{background:#07070f;font-family:'Inter',sans-serif;overflow-x:hidden;color:#fff;}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;
+padding:15px 5%;backdrop-filter:blur(20px);z-index:1000;background:rgba(0,0,0,0.7);
+border-bottom:1px solid rgba(255,255,255,0.1);}
+header h1{font-family:'Fall is Coming',sans-serif;color:#00ffcc;font-weight:700;font-size:2rem;}
 nav{display:flex;gap:20px;align-items:center;}
 nav a{color:#fff;text-decoration:none;font-weight:500;position:relative;transition:0.3s;}
 nav a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:2px;background:#00ffcc;transition:0.3s;}
 nav a:hover::after{width:100%;}
-
-/* Hamburger */
-#hamburger{
-  display:none;
-  flex-direction:column;
-  cursor:pointer;
-  gap:5px;
-}
-#hamburger .line{
-  width:30px;height:3px;background:#00ffcc;border-radius:2px;
-  transition:0.4s;
-}
-
-/* Hero */
-.hero{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center;position:relative;overflow:hidden;padding-top:100px;
-}
-.hero h2{font-family:'Fall is Coming', sans-serif;font-size:3rem;color:#00ffcc;margin-bottom:15px;text-shadow:0 0 10px #00ffcc;}
+#hamburger{display:none;flex-direction:column;cursor:pointer;gap:5px;}
+#hamburger .line{width:30px;height:3px;background:#00ffcc;border-radius:2px;transition:0.4s;}
+.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center;position:relative;overflow:hidden;padding-top:100px;}
+.hero h2{font-family:'Fall is Coming',sans-serif;font-size:3rem;color:#00ffcc;margin-bottom:15px;text-shadow:0 0 10px #00ffcc;}
 .hero h3{font-size:1.3rem;color:#ccc;margin-bottom:50px;}
-
-/* CTA Buttons */
-.cta{
-  padding:20px 5%;
-  text-align:center;
-  margin-bottom:50px;
-}
-.cta-container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:30px;
-}
-.cta button{
-  padding:15px 30px;
-  font-size:1.1rem;
-  font-family:'Fall is Coming', sans-serif;
-  color:#fff;
-  background:rgba(0,255,204,0.1);
-  border:2px solid #00ffcc;
-  border-radius:12px;
-  cursor:pointer;
-  backdrop-filter:blur(5px);
-  transition:0.3s;
-}
-.cta button:hover{
-  background:#00ffcc;
-  color:#000;
-  box-shadow:0 0 15px #00ffcc,0 0 25px #00ffcc80;
-}
-
-/* Projects Section */
-.projects{
-  padding:80px 5%;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:40px;
-  justify-items:center;
-}
-.card{
-  width:100%;
-  max-width:350px;
-  background:#111;
-  border-radius:20px;
-  overflow:hidden;
-  transition:transform 0.5s,box-shadow 0.5s;
-  cursor:pointer;
-  backdrop-filter:blur(5px);
-}
+.cta{text-align:center;margin-bottom:50px;}
+.cta-container{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
+.cta button{padding:15px 30px;font-size:1.1rem;font-family:'Fall is Coming',sans-serif;color:#fff;background:rgba(0,255,204,0.1);border:2px solid #00ffcc;border-radius:12px;cursor:pointer;transition:0.3s;}
+.cta button:hover{background:#00ffcc;color:#000;box-shadow:0 0 15px #00ffcc,0 0 25px #00ffcc80;}
+.projects{padding:80px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;justify-items:center;}
+.card{width:100%;max-width:350px;background:#111;border-radius:20px;overflow:hidden;transition:transform 0.5s,box-shadow 0.5s;cursor:pointer;}
 .card:hover{transform:translateY(-10px) rotateX(5deg) rotateY(5deg);box-shadow:0 0 50px #00ffcc80;}
 .card img{width:100%;height:200px;object-fit:cover;transition:transform 0.5s;}
 .card:hover img{transform:scale(1.05);}
-.card-content{padding:20px;}
-.card-content h4{color:#00ffcc;margin-bottom:10px;font-family:'Fall is Coming', sans-serif;}
-.card-content p{color:#ccc;font-size:0.9rem;line-height:1.5;}
-
-/* Footer */
-footer{
-  background:#000;
-  padding:60px 5%;
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  border-top:1px solid rgba(255,255,255,0.1);
-}
-footer h4{color:#00ffcc;margin-bottom:10px;font-family:'Fall is Coming', sans-serif;}
-footer p, footer a{color:#ccc;margin:5px;}
-footer a{margin:0 10px;text-decoration:none;transition:0.3s;}
+.card-content{padding:20px;text-align:center;}
+.card-content h4{color:#00ffcc;margin-bottom:10px;font-family:'Fall is Coming',sans-serif;}
+.card-content p{color:#ccc;font-size:0.9rem;line-height:1.5;margin-bottom:10px;}
+.card-content a{display:inline-block;padding:10px 20px;border:2px solid #00ffcc;border-radius:8px;color:#00ffcc;text-decoration:none;font-family:'Fall is Coming',sans-serif;transition:0.3s;}
+.card-content a:hover{background:#00ffcc;color:#000;box-shadow:0 0 15px #00ffcc;}
+footer{background:#000;padding:60px 5%;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;border-top:1px solid rgba(255,255,255,0.1);}
+footer h4{color:#00ffcc;margin-bottom:10px;font-family:'Fall is Coming',sans-serif;}
+footer p,footer a{color:#ccc;margin:5px;}
+footer a{text-decoration:none;transition:0.3s;}
 footer a:hover{color:#fff;}
-
-/* Background Canvas */
-canvas{
-  position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;
-  filter:blur(2px);
-}
-
-/* Mobile Responsive */
+canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;filter:blur(2px);}
 @media(max-width:768px){
-  header{flex-direction:row;justify-content:space-between;align-items:center;padding:10px 5%;}
-  #hamburger{display:flex;}
-  nav{display:none;position:absolute;top:70px;right:5%;flex-direction:column;background:rgba(0,0,0,0.9);padding:15px;border-radius:10px;}
-  nav.show{display:flex;}
-  nav a, nav p{font-size:1rem;margin-bottom:10px;}
-  .hero h2{font-size:2rem;}
-  .hero h3{font-size:1rem;margin-bottom:30px;}
-  .cta button{width:80%;}
+header{padding:10px 5%;}
+#hamburger{display:flex;}
+nav{display:none;position:absolute;top:70px;right:5%;flex-direction:column;background:rgba(0,0,0,0.9);padding:15px;border-radius:10px;}
+nav.show{display:flex;}
+.cta button{width:80%;}
+.hero h2{font-size:2rem;}
 }
-
-/* Fixed WhatsApp Button */
-#whatsappBtn{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  width:60px;height:60px;
-  z-index:10000;
-  cursor:pointer;
-  animation: bounce 2s infinite;
-}
+#whatsappBtn{position:fixed;bottom:20px;right:20px;width:60px;height:60px;z-index:10000;cursor:pointer;animation:bounce 2s infinite;}
 #whatsappBtn img{width:100%;height:100%;}
 @keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0);}40%{transform:translateY(-10px);}60%{transform:translateY(-5px);}}
 </style>
@@ -196,11 +77,7 @@ canvas{
 
 <header>
   <h1>Yash Prajapati</h1>
-  <div id="hamburger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </div>
+  <div id="hamburger"><div class="line"></div><div class="line"></div><div class="line"></div></div>
   <nav id="mobileNav">
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
@@ -217,35 +94,39 @@ canvas{
 
 <section class="cta">
   <div class="cta-container">
-    <button herf="projects.html">See Projects</button>
+    <button id="seeProjects">See Projects</button>
     <button id="hireMe">Hire Me</button>
   </div>
 </section>
 
 <section id="projects" class="projects">
-  
-  <div class="card">
-    <img src="https://i.postimg.cc/L8FGzct2/medical-website.png" alt="INDOSWISS MEDICON" >
-    <div class="card-content"><h4>INDOSWISS MEDICON</h4>
-      <p>A dynamic medical website integrated with smooth UI, patient interaction features, and responsive modern design.</p>
-     <a href="https://yash817.github.io/medical-website-/" class="visit-btn" target="_blank">Visit Project</a>
+  <div class="card" onclick="window.location.href='projects.html'">
+    <img src="https://i.postimg.cc/L8FGzct2/medical-website.png" alt="INDOSWISS MEDICON">
+    <div class="card-content">
+      <h4>INDOSWISS MEDICON</h4>
+      <p>A dynamic medical website with smooth UI and patient interaction features.</p>
+      <a href="https://yash817.github.io/medical-website-/" target="_blank">View Project</a>
     </div>
   </div>
-  
-  <div class="card">
+
+  <div class="card" onclick="window.location.href='projects.html'">
     <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
-    <div class="card-content"><h4>Freelancer AI Hub</h4><p>AI-driven system for automating client projects and earnings.</p></div>
+    <div class="card-content">
+      <h4>Freelancer AI Hub</h4>
+      <p>AI-driven system for automating client projects and earnings.</p>
+      <a href="projects.html">View Project</a>
+    </div>
   </div>
-  <div class="card">
+
+  <div class="card" onclick="window.location.href='projects.html'">
     <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80">
-    <div class="card-content"><h4>Startup Web Portal</h4><p>Professional responsive web portal with full SEO optimization.</p></div>
+    <div class="card-content">
+      <h4>Startup Web Portal</h4>
+      <p>Professional responsive web portal with full SEO optimization.</p>
+      <a href="projects.html">View Project</a>
+    </div>
   </div>
 </section>
-
-<!-- <section id="about" style="padding:50px 5%;text-align:center;color:#ccc;">
-  <h2>About Me</h2>
-  <p>I am Yash, an AI-powered freelance coder and designer, creating modern web experiences with professional and interactive designs.</p>
-</section> -->
 
 <footer>
   <h4>Let's Connect & Build the Future</h4>
@@ -253,62 +134,56 @@ canvas{
   <p><a href="https://www.instagram.com/yash.mme?igsh=a2J1cmR6cjZ3cWRo">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
 </footer>
 
-<!-- Fixed WhatsApp Button -->
 <a href="https://api.whatsapp.com/send?phone=+919120920817&text=Hi%20Yash,%20I%20am%20interested%20in%20your%20services!" target="_blank" id="whatsappBtn">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
 </a>
 
 <script>
-// Typing effect
 const words=["Freelancer","Web Designer","AI Developer","Creative Coder"];
 let i=0,j=0,isDeleting=false;
 const typing=document.getElementById('typing');
 function type(){
   const current=words[i];
   typing.innerHTML=current.substring(0,j);
-  if(!isDeleting && j<current.length){ j++; setTimeout(type,150);}
-  else if(isDeleting && j>0){ j--; setTimeout(type,100);}
-  else{ isDeleting=!isDeleting;if(!isDeleting)i=(i+1)%words.length; setTimeout(type,800);}
+  if(!isDeleting && j<current.length){j++;setTimeout(type,150);}
+  else if(isDeleting && j>0){j--;setTimeout(type,100);}
+  else{isDeleting=!isDeleting;if(!isDeleting)i=(i+1)%words.length;setTimeout(type,800);}
 }
 type();
 
-// GSAP scroll animations
-gsap.from('.hero h2',{y:50,opacity:0,duration:1,delay:0.5});
-gsap.from('.cta-container',{y:50,opacity:0,duration:1,delay:0.7});
-gsap.from('.card',{scrollTrigger:'.projects',y:100,opacity:0,stagger:0.2,duration:0.8});
-
-// Smooth scroll to Projects
 document.getElementById('seeProjects').addEventListener('click',()=>{
-  document.getElementById('projects').scrollIntoView({behavior:'smooth'});
+  window.location.href='projects.html';
 });
 
-// WhatsApp Predefined Message
 const phoneNumber="+919120920817"; 
-const message="Hi Yash, I checked your portfolio and I am interested in hiring you for my project. Please let me know your availability and rates. Looking forward to working with you!";
+const message="Hi Yash, I checked your portfolio and I'm interested in hiring you.";
 document.getElementById('hireMe').addEventListener('click',()=>{
-  window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`, '_blank');
+  window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`,'_blank');
 });
 
-// Mobile Hamburger Menu
 const hamburger=document.getElementById('hamburger');
 const mobileNav=document.getElementById('mobileNav');
-hamburger.addEventListener('click',()=>{ mobileNav.classList.toggle('show'); });
+hamburger.addEventListener('click',()=>{mobileNav.classList.toggle('show');});
 
-// Particle background
-const canvas=document.getElementById('bgCanvas');const ctx=canvas.getContext('2d');
+const canvas=document.getElementById('bgCanvas');
+const ctx=canvas.getContext('2d');
 let w=canvas.width=window.innerWidth;let h=canvas.height=window.innerHeight;
 const particles=[];
 for(let k=0;k<150;k++){
   particles.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-0.5)*1,vy:(Math.random()-0.5)*1,radius:Math.random()*2+1,color:`hsl(${Math.random()*360},70%,70%)`});
 }
-function animate(){ctx.clearRect(0,0,w,h);particles.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=w;if(p.x>w)p.x=0;if(p.y<0)p.y=h;if(p.y>h)p.y=0;ctx.beginPath();ctx.arc(p.x,p.y,p.radius,0,Math.PI*2);ctx.fillStyle=p.color;ctx.shadowBlur=10;ctx.shadowColor=p.color;ctx.fill();});requestAnimationFrame(animate);}
+function animate(){
+  ctx.clearRect(0,0,w,h);
+  particles.forEach(p=>{
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.x<0)p.x=w;if(p.x>w)p.x=0;if(p.y<0)p.y=h;if(p.y>h)p.y=0;
+    ctx.beginPath();ctx.arc(p.x,p.y,p.radius,0,Math.PI*2);
+    ctx.fillStyle=p.color;ctx.shadowBlur=10;ctx.shadowColor=p.color;ctx.fill();
+  });
+  requestAnimationFrame(animate);
+}
 animate();
 window.addEventListener('resize',()=>{w=canvas.width=window.innerWidth;h=canvas.height=window.innerHeight;});
 </script>
 </body>
 </html>
-
-
-
-
-
