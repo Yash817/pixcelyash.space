@@ -1,189 +1,1443 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yash Prajapati — Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Yash Prajapati | Cinematic Web Developer & Designer</title>
+    <meta name="description" content="Professional web developer specializing in cinematic, animated, SEO-optimized websites. Hire me for global projects.">
+    <meta name="keywords" content="web developer, cinematic website, animated portfolio, hire web designer, build website, responsive website India, SEO developer">
+    <meta name="author" content="Yash Prajapati">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yash817.github.io/">
+    <meta property="og:title" content="Yash Prajapati | Cinematic Web Developer & Designer">
+    <meta property="og:description" content="Professional web developer specializing in cinematic, animated, SEO-optimized websites.">
+    <meta property="og:image" content="https://i.postimg.cc/L8FGzct2/medical-website.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yash817.github.io/">
+    <meta property="twitter:title" content="Yash Prajapati | Cinematic Web Developer & Designer">
+    <meta property="twitter:description" content="Professional web developer specializing in cinematic, animated, SEO-optimized websites.">
+    <meta property="twitter:image" content="https://i.postimg.cc/L8FGzct2/medical-website.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yash Prajapati",
+      "jobTitle": "Web Developer & Designer",
+      "description": "Professional web developer specializing in cinematic, animated, SEO-optimized websites",
+      "url": "https://yash817.github.io/",
+      "sameAs": [
+        "https://github.com/yash817",
+        "https://linkedin.com/in/yashprajapati"
+      ]
+    }
+    </script>
 
-<!-- SEO Meta Tags -->
-<meta name="description" content="Yash Prajapati - AI-powered freelance web developer & designer. Professional portfolio showcasing projects, web design, and creative coding services.">
-<meta name="keywords" content="website making, portfolio website, freelance web developer, AI web designer, professional web portfolio, web projects, creative coding, freelancer">
-<meta name="author" content="Yash Prajapati">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://pixcelyash.space/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!-- Open Graph -->
-<meta property="og:title" content="Yash Prajapati — Professional Portfolio">
-<meta property="og:description" content="AI-powered freelance web developer & designer. Check my portfolio and hire me.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://pixcelyash.space/">
-<meta property="og:image" content="https://pixcelyash.space/cover-image.jpg">
+        :root {
+            --primary-bg: #0A0F1C;
+            --secondary-bg: #050814;
+            --blue: #3B82F6;
+            --purple: #8B5CF6;
+            --cyan: #06B6D4;
+            --pink: #EC4899;
+        }
 
-<link href="https://fonts.cdnfonts.com/css/fall-is-coming" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--primary-bg);
+            color: #fff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{background:#07070f;font-family:'Inter',sans-serif;overflow-x:hidden;color:#fff;}
-header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;
-padding:15px 5%;backdrop-filter:blur(20px);z-index:1000;background:rgba(0,0,0,0.7);
-border-bottom:1px solid rgba(255,255,255,0.1);}
-header h1{font-family:'Fall is Coming',sans-serif;color:#00ffcc;font-weight:700;font-size:2rem;}
-nav{display:flex;gap:20px;align-items:center;}
-nav a{color:#fff;text-decoration:none;font-weight:500;position:relative;transition:0.3s;}
-nav a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:2px;background:#00ffcc;transition:0.3s;}
-nav a:hover::after{width:100%;}
-#hamburger{display:none;flex-direction:column;cursor:pointer;gap:5px;}
-#hamburger .line{width:30px;height:3px;background:#00ffcc;border-radius:2px;transition:0.4s;}
-.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center;position:relative;overflow:hidden;padding-top:100px;}
-.hero h2{font-family:'Fall is Coming',sans-serif;font-size:3rem;color:#00ffcc;margin-bottom:15px;text-shadow:0 0 10px #00ffcc;}
-.hero h3{font-size:1.3rem;color:#ccc;margin-bottom:50px;}
-.cta{text-align:center;margin-bottom:50px;}
-.cta-container{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
-.cta button{padding:15px 30px;font-size:1.1rem;font-family:'Fall is Coming',sans-serif;color:#fff;background:rgba(0,255,204,0.1);border:2px solid #00ffcc;border-radius:12px;cursor:pointer;transition:0.3s;}
-.cta button:hover{background:#00ffcc;color:#000;box-shadow:0 0 15px #00ffcc,0 0 25px #00ffcc80;}
-.projects{padding:80px 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;justify-items:center;}
-.card{width:100%;max-width:350px;background:#111;border-radius:20px;overflow:hidden;transition:transform 0.5s,box-shadow 0.5s;cursor:pointer;}
-.card:hover{transform:translateY(-10px) rotateX(5deg) rotateY(5deg);box-shadow:0 0 50px #00ffcc80;}
-.card img{width:100%;height:200px;object-fit:cover;transition:transform 0.5s;}
-.card:hover img{transform:scale(1.05);}
-.card-content{padding:20px;text-align:center;}
-.card-content h4{color:#00ffcc;margin-bottom:10px;font-family:'Fall is Coming',sans-serif;}
-.card-content p{color:#ccc;font-size:0.9rem;line-height:1.5;margin-bottom:10px;}
-.card-content a{display:inline-block;padding:10px 20px;border:2px solid #00ffcc;border-radius:8px;color:#00ffcc;text-decoration:none;font-family:'Fall is Coming',sans-serif;transition:0.3s;}
-.card-content a:hover{background:#00ffcc;color:#000;box-shadow:0 0 15px #00ffcc;}
-footer{background:#000;padding:60px 5%;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;border-top:1px solid rgba(255,255,255,0.1);}
-footer h4{color:#00ffcc;margin-bottom:10px;font-family:'Fall is Coming',sans-serif;}
-footer p,footer a{color:#ccc;margin:5px;}
-footer a{text-decoration:none;transition:0.3s;}
-footer a:hover{color:#fff;}
-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;filter:blur(2px);}
-@media(max-width:768px){
-header{padding:10px 5%;}
-#hamburger{display:flex;}
-nav{display:none;position:absolute;top:70px;right:5%;flex-direction:column;background:rgba(0,0,0,0.9);padding:15px;border-radius:10px;}
-nav.show{display:flex;}
-.cta button{width:80%;}
-.hero h2{font-size:2rem;}
-}
-#whatsappBtn{position:fixed;bottom:20px;right:20px;width:60px;height:60px;z-index:10000;cursor:pointer;animation:bounce 2s infinite;}
-#whatsappBtn img{width:100%;height:100%;}
-@keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0);}40%{transform:translateY(-10px);}60%{transform:translateY(-5px);}}
-</style>
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--primary-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--blue), var(--purple));
+            border-radius: 10px;
+        }
+
+        /* ========== PRELOADER STYLES ========== */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .preloader-content {
+            text-align: center;
+            z-index: 10;
+        }
+
+        .preloader-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .streak {
+            position: absolute;
+            width: 2px;
+            height: 200px;
+            background: linear-gradient(180deg, transparent, var(--blue), var(--purple), transparent);
+            animation: streakFall 2s infinite;
+        }
+
+        @keyframes streakFall {
+            0% { top: -200px; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+
+        .preloader-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: orbPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes orbPulse {
+            0%, 100% { transform: scale(1); opacity: 0.3; }
+            50% { transform: scale(1.5); opacity: 0.6; }
+        }
+
+        .preloader-title {
+            font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 40px rgba(139, 92, 246, 0.6);
+        }
+
+        .preloader-subtitle {
+            font-size: 1rem;
+            color: #9CA3AF;
+            letter-spacing: 0.1em;
+        }
+
+        .letter {
+            display: inline-block;
+            opacity: 0;
+            animation: letterFadeIn 0.3s forwards;
+        }
+
+        @keyframes letterFadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ========== 3D HERO SECTION ========== */
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .floating-cube {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            animation: floatRotate 20s infinite linear;
+        }
+
+        @keyframes floatRotate {
+            0% { transform: rotateX(0deg) rotateY(0deg) translateZ(0px); }
+            100% { transform: rotateX(360deg) rotateY(360deg) translateZ(100px); }
+        }
+
+        .cube-face {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .particle-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: var(--blue);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--blue);
+            animation: particleFloat 10s infinite;
+        }
+
+        @keyframes particleFloat {
+            0%, 100% { transform: translate(0, 0); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translate(var(--tx), var(--ty)); opacity: 0; }
+        }
+
+        .hero-content {
+            text-align: center;
+            z-index: 10;
+            padding: 2rem;
+            max-width: 1200px;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 6vw, 5rem);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #fff, var(--blue), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: textShine 3s ease-in-out infinite;
+        }
+
+        @keyframes textShine {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .typewriter {
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1em;
+            background: var(--blue);
+            margin-left: 5px;
+            animation: blink 1s infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            color: #fff;
+            box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 50px rgba(59, 130, 246, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--blue);
+            color: #fff;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: var(--blue);
+            transform: translateY(-3px);
+        }
+
+        /* ========== STORYTELLING SECTION WITH 3D ========== */
+        #storytelling {
+            position: relative;
+        }
+
+        .story-panel {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            perspective: 1500px;
+        }
+
+        .story-content {
+            max-width: 900px;
+            padding: 2rem;
+            text-align: center;
+            z-index: 10;
+            position: relative;
+        }
+
+        .story-title {
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin-bottom: 2rem;
+            line-height: 1.3;
+        }
+
+        .story-number {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            font-size: 10rem;
+            font-weight: 700;
+            color: rgba(59, 130, 246, 0.1);
+            z-index: 1;
+        }
+
+        /* Panel 1 - Code Particles */
+        .code-matrix {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            opacity: 0.3;
+        }
+
+        .code-column {
+            position: absolute;
+            top: -100%;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: var(--cyan);
+            white-space: nowrap;
+            animation: matrixFall 10s linear infinite;
+        }
+
+        @keyframes matrixFall {
+            to { top: 100%; }
+        }
+
+        /* Panel 2 - 3D Code Block */
+        .code-block-3d {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateX(20deg) rotateY(20deg);
+            transform-style: preserve-3d;
+            width: 300px;
+            height: 200px;
+            animation: codeRotate 10s ease-in-out infinite;
+        }
+
+        @keyframes codeRotate {
+            0%, 100% { transform: translate(-50%, -50%) rotateX(20deg) rotateY(20deg); }
+            50% { transform: translate(-50%, -50%) rotateX(-20deg) rotateY(-20deg); }
+        }
+
+        /* Panel 3 - Holographic Effect */
+        .hologram {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                45deg,
+                transparent 30%,
+                rgba(59, 130, 246, 0.1) 50%,
+                transparent 70%
+            );
+            background-size: 200% 200%;
+            animation: hologramShift 3s ease-in-out infinite;
+        }
+
+        @keyframes hologramShift {
+            0%, 100% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+        }
+
+        /* Panel 4 - 3D Globe */
+        .globe-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            transform-style: preserve-3d;
+            animation: globeRotate 20s linear infinite;
+        }
+
+        @keyframes globeRotate {
+            to { transform: translate(-50%, -50%) rotateY(360deg); }
+        }
+
+        .globe-ring {
+            position: absolute;
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50%;
+            transform-style: preserve-3d;
+        }
+
+        /* ========== PROJECTS SECTION ========== */
+        #projects {
+            padding: 5rem 2rem;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #fff, var(--blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: rgba(17, 24, 39, 0.5);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.5s ease;
+            transform-style: preserve-3d;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) rotateX(5deg);
+            border-color: var(--blue);
+            box-shadow: 0 20px 60px rgba(59, 130, 246, 0.4);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.1);
+        }
+
+        .project-info {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .project-desc {
+            color: #9CA3AF;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--blue);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: var(--purple);
+            transform: translateX(5px);
+        }
+
+        /* Coming Soon Cards */
+        .coming-soon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            background: linear-gradient(135deg, rgba(17, 24, 39, 0.5), rgba(31, 41, 55, 0.5));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lock-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: lockPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes lockPulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        .shimmer {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(59, 130, 246, 0.2),
+                transparent
+            );
+            animation: shimmerMove 3s infinite;
+        }
+
+        @keyframes shimmerMove {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        .coming-soon-badge {
+            padding: 0.5rem 1.5rem;
+            background: rgba(139, 92, 246, 0.2);
+            border: 1px solid var(--purple);
+            border-radius: 20px;
+            color: var(--purple);
+            margin-top: 1rem;
+        }
+
+        /* ========== SERVICES SECTION ========== */
+        #services {
+            padding: 5rem 2rem;
+            background: linear-gradient(180deg, var(--primary-bg), var(--secondary-bg));
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            padding: 2.5rem;
+            background: rgba(17, 24, 39, 0.3);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            transition: all 0.4s ease;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            border-radius: 20px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .service-card:hover::before {
+            opacity: 0.2;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--blue);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: rotateY(360deg);
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .service-desc {
+            color: #9CA3AF;
+            line-height: 1.6;
+        }
+
+        /* ========== CONTACT SECTION ========== */
+        #contact {
+            padding: 5rem 2rem;
+            position: relative;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            background: rgba(17, 24, 39, 0.5);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(31, 41, 55, 0.5);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 8px;
+            color: #fff;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--blue);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        /* Popup Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1F2937, #111827);
+            border: 2px solid var(--blue);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 500px;
+            margin: 2rem;
+            animation: modalSlideIn 0.5s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(59, 130, 246, 0.2);
+            border-top: 4px solid var(--blue);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: linear-gradient(180deg, var(--primary-bg), var(--secondary-bg));
+            padding: 4rem 2rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wave-divider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #9CA3AF;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--blue);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--blue);
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(59, 130, 246, 0.2);
+            color: #9CA3AF;
+        }
+
+        /* ========== WHATSAPP FLOAT ========== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 25px rgba(37, 211, 102, 0.5);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s ease;
+            animation: floatPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes floatPulse {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 35px rgba(37, 211, 102, 0.7);
+        }
+
+        .whatsapp-float::before {
+            content: '';
+            position: absolute;
+            inset: -10px;
+            border: 2px solid #25D366;
+            border-radius: 50%;
+            animation: ripple 2s ease-out infinite;
+        }
+
+        @keyframes ripple {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .preloader-title { font-size: 2.5rem; }
+            .hero-title { font-size: 2rem; }
+            .story-title { font-size: 2rem; }
+            .story-number { font-size: 5rem; }
+            .hero-buttons { flex-direction: column; }
+            .projects-grid,
+            .services-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; }
+            .contact-form { padding: 2rem; }
+        }
+
+        @media (min-width: 1920px) {
+            body { font-size: 18px; }
+            .hero-title { font-size: 6rem; }
+        }
+
+        /* Utility Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.8s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
 </head>
 <body>
-<canvas id="bgCanvas"></canvas>
 
-<header>
-  <h1>Yash Prajapati</h1>
-  <div id="hamburger"><div class="line"></div><div class="line"></div><div class="line"></div></div>
-  <nav id="mobileNav">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="#game">Game Zone</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h2>Hi, I'm Yash — <span id="typing"></span></h2>
-  <h3>AI-Powered Freelance Coder & Designer</h3>
-</section>
-
-<section class="cta">
-  <div class="cta-container">
-    <button id="seeProjects">See Projects</button>
-    <button id="hireMe">Hire Me</button>
-  </div>
-</section>
-
-<section id="projects" class="projects">
-  <div class="card" onclick="window.location.href='projects.html'">
-    <img src="https://i.postimg.cc/L8FGzct2/medical-website.png" alt="INDOSWISS MEDICON">
-    <div class="card-content">
-      <h4>INDOSWISS MEDICON</h4>
-      <p>A dynamic medical website with smooth UI and patient interaction features.</p>
-      <a href="https://yash817.github.io/medical-website-/" target="_blank">View Project</a>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <!-- Animated Streaks -->
+            <div class="streak" style="left: 10%; animation-delay: 0s;"></div>
+            <div class="streak" style="left: 25%; animation-delay: 0.3s;"></div>
+            <div class="streak" style="left: 40%; animation-delay: 0.6s;"></div>
+            <div class="streak" style="left: 55%; animation-delay: 0.9s;"></div>
+            <div class="streak" style="left: 70%; animation-delay: 1.2s;"></div>
+            <div class="streak" style="left: 85%; animation-delay: 1.5s;"></div>
+            
+            <!-- Glowing Orbs -->
+            <div class="preloader-orb" style="top: 20%; left: 20%; width: 300px; height: 300px; background: #3B82F6;"></div>
+            <div class="preloader-orb" style="bottom: 20%; right: 20%; width: 400px; height: 400px; background: #8B5CF6; animation-delay: 1s;"></div>
+        </div>
+        
+        <div class="preloader-content">
+            <h1 class="preloader-title" id="preloaderTitle"></h1>
+            <p class="preloader-subtitle" id="preloaderSubtitle"></p>
+        </div>
     </div>
-  </div>
 
-  <div class="card" onclick="window.location.href='projects.html'">
-    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
-    <div class="card-content">
-      <h4>Freelancer AI Hub</h4>
-      <p>AI-driven system for automating client projects and earnings.</p>
-      <a href="projects.html">View Project</a>
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="hero-bg">
+            <!-- Animated Gradient Background -->
+            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #0A0F1C 0%, #1e3a8a 50%, #4c1d95 100%); animation: gradientShift 10s ease infinite; background-size: 200% 200%;"></div>
+            
+            <!-- Particle System -->
+            <div class="particle-container" id="particleContainer"></div>
+            
+            <!-- 3D Floating Cubes -->
+            <div class="floating-cube" style="top: 10%; left: 10%;">
+                <div class="cube-face" style="transform: rotateY(0deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateY(90deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateY(180deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateY(-90deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateX(90deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateX(-90deg) translateZ(50px);"></div>
+            </div>
+            
+            <div class="floating-cube" style="top: 60%; right: 15%; animation-delay: -5s;">
+                <div class="cube-face" style="transform: rotateY(0deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateY(90deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateY(180deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateY(-90deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateX(90deg) translateZ(50px);"></div>
+                <div class="cube-face" style="transform: rotateX(-90deg) translateZ(50px);"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Yash Prajapati</h1>
+            <div class="typewriter">
+                <p id="typewriterText" style="font-size: clamp(1rem, 3vw, 1.5rem); color: #E5E7EB;"></p>
+            </div>
+            <p style="color: #9CA3AF; margin: 2rem 0; font-size: 1.1rem;">Scroll down to see my story unfold.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="https://wa.me/9120920918?text=Hi%20Yash%20👋%20I%20want%20to%20hire%20you!" target="_blank" class="btn btn-secondary">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORYTELLING SECTION -->
+    <section id="storytelling">
+        <!-- Panel 1: Curiosity -->
+        <div class="story-panel" style="background: linear-gradient(180deg, #0A0F1C, #050814);">
+            <div class="code-matrix" id="codeMatrix"></div>
+            <div class="story-content fade-in">
+                <h2 class="story-title">It started with curiosity…</h2>
+                <p style="color: #9CA3AF; font-size: 1.2rem;">A simple question: "How do websites work?" led me down an incredible journey.</p>
+            </div>
+            <div class="story-number">01</div>
+        </div>
+
+        <!-- Panel 2: First Code -->
+        <div class="story-panel" style="background: #0d1428;">
+            <div class="code-block-3d">
+                <pre style="color: var(--cyan); text-shadow: 0 0 10px var(--cyan); font-size: 14px;">
+<html>
+  <body>
+    <h1>Hello World</h1>
+  </body>
+</html>
+                </pre>
+            </div>
+            <div class="story-content fade-in">
+                <h2 class="story-title">Then came the first line of code — my turning point.</h2>
+                <p style="color: #9CA3AF; font-size: 1.2rem;">That moment when everything clicked, and I knew this was my calling.</p>
+            </div>
+            <div class="story-number">02</div>
+        </div>
+
+        <!-- Panel 3: Sleepless Nights -->
+        <div class="story-panel" style="background: linear-gradient(135deg, #0A0F1C, #1e1b4b);">
+            <div class="hologram"></div>
+            <div class="story-content fade-in">
+                <h2 class="story-title">From sleepless nights to stunning websites.</h2>
+                <p style="color: #9CA3AF; font-size: 1.2rem;">Every bug fixed, every feature perfected. The journey that shaped me.</p>
+            </div>
+            <div class="story-number">03</div>
+        </div>
+
+        <!-- Panel 4: Global Work -->
+        <div class="story-panel" style="background: #050814;">
+            <div class="globe-container">
+                <div class="globe-ring" style="width: 100%; height: 100%; transform: rotateX(70deg);"></div>
+                <div class="globe-ring" style="width: 80%; height: 80%; top: 10%; left: 10%; transform: rotateX(60deg);"></div>
+                <div class="globe-ring" style="width: 60%; height: 60%; top: 20%; left: 20%; transform: rotateX(50deg);"></div>
+            </div>
+            <div class="story-content fade-in">
+                <h2 class="story-title">Now, I build high-end, cinematic websites for clients worldwide.</h2>
+                <p style="color: #9CA3AF; font-size: 1.2rem;">Building the future, one pixel at a time.</p>
+            </div>
+            <div class="story-number">04</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2 class="section-title">My Work</h2>
+        <div class="projects-grid">
+            <!-- Live Project -->
+            <div class="project-card fade-in">
+                <img src="https://i.postimg.cc/L8FGzct2/medical-website.png" alt="Medical Website" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Medical Website</h3>
+                    <p class="project-desc">A modern, responsive medical website with advanced features and seamless user experience.</p>
+                    <a href="https://yash817.github.io/medical-website-/" target="_blank" class="project-link">
+                        View Live Project
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coming Soon Projects -->
+            <div class="project-card coming-soon fade-in">
+                <div class="shimmer"></div>
+                <div class="lock-icon">🔒</div>
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-desc">Full-featured online shopping experience</p>
+                <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+
+            <div class="project-card coming-soon fade-in">
+                <div class="shimmer"></div>
+                <div class="lock-icon">🔒</div>
+                <h3 class="project-title">Portfolio Template</h3>
+                <p class="project-desc">Stunning portfolio showcase for creatives</p>
+                <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+
+            <div class="project-card coming-soon fade-in">
+                <div class="shimmer"></div>
+                <div class="lock-icon">🔒</div>
+                <h3 class="project-title">SaaS Dashboard</h3>
+                <p class="project-desc">Modern analytics and management dashboard</p>
+                <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <h2 class="section-title">What I Offer</h2>
+        <p style="text-align: center; color: #9CA3AF; max-width: 700px; margin: 0 auto 3rem; font-size: 1.1rem;">Comprehensive web solutions tailored to bring your vision to life</p>
+        
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">💻</div>
+                <h3 class="service-title">Web Design & Development</h3>
+                <p class="service-desc">Custom websites built with modern technologies, responsive design, and pixel-perfect execution.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">✨</div>
+                <h3 class="service-title">UI/UX Animation</h3>
+                <p class="service-desc">Breathtaking animations using GSAP, Lottie, and Framer Motion to bring your designs to life.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">🔍</div>
+                <h3 class="service-title">SEO Optimization & Ranking</h3>
+                <p class="service-desc">Strategic SEO implementation to boost your visibility and drive organic traffic to your site.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">🖥️</div>
+                <h3 class="service-title">Hosting & Maintenance</h3>
+                <p class="service-desc">Reliable hosting solutions and ongoing maintenance to keep your website running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2 class="section-title">Let's Create Together</h2>
+        <p style="text-align: center; color: #9CA3AF; margin-bottom: 3rem; font-size: 1.1rem;">I'm always open to exciting collaborations and ideas.</p>
+        
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Message 📨
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <svg class="wave-divider" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
+                  fill="rgba(59, 130, 246, 0.1)">
+                <animate attributeName="d" 
+                         dur="10s" 
+                         repeatCount="indefinite"
+                         values="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z;
+                                M321.39,70c58-10.79,114.16-20,172-30,82.39-16.72,168.19-10,250.45,5C823.78,50,906.67,80,985.66,100c70.05,18.48,146.53,20,214.34,10V0H0V40A600.21,600.21,0,0,0,321.39,70Z;
+                                M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"/>
+            </path>
+        </svg>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>💻 Yash Prajapati</h3>
+                <p>Creating cinematic digital experiences through code and design.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#hero">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/yash817" target="_blank" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/yashprajapati" target="_blank" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/yashprajapati" target="_blank" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Built with 💻 and 💡 by Yash Prajapati</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">© 2025 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT BUTTON -->
+    <div class="whatsapp-float" onclick="window.open('https://wa.me/9120920918?text=Hi%20Yash%20👋%20I%20want%20to%20connect!', '_blank')">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
     </div>
-  </div>
 
-  <div class="card" onclick="window.location.href='projects.html'">
-    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80">
-    <div class="card-content">
-      <h4>Startup Web Portal</h4>
-      <p>Professional responsive web portal with full SEO optimization.</p>
-      <a href="projects.html">View Project</a>
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="spinner"></div>
+            <h3 style="margin-bottom: 1rem;">Thanks for showing interest in working with Yash 💻</h3>
+            <p style="color: #9CA3AF;">Redirecting you to WhatsApp...</p>
+        </div>
     </div>
-  </div>
-</section>
 
-<footer>
-  <h4>Let's Connect & Build the Future</h4>
-  <p>© 2025 Yash Prajapati | Built with 💡 & AI Innovation</p>
-  <p><a href="https://www.instagram.com/yash.mme?igsh=a2J1cmR6cjZ3cWRo">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
-</footer>
+    <script>
+        // ========== PRELOADER ANIMATION ==========
+        const preloaderTitle = document.getElementById('preloaderTitle');
+        const preloaderSubtitle = document.getElementById('preloaderSubtitle');
+        const preloader = document.getElementById('preloader');
+        
+        const mainText = "Yash Presents";
+        const subText = "Crafting Digital Experiences Through Code";
+        
+        function animateText(element, text, delay = 100) {
+            return new Promise((resolve) => {
+                let index = 0;
+                const interval = setInterval(() => {
+                    if (index < text.length) {
+                        const char = text[index];
+                        const span = document.createElement('span');
+                        span.className = 'letter';
+                        span.textContent = char === ' ' ? '\u00A0' : char;
+                        span.style.animationDelay = `${index * 0.05}s`;
+                        element.appendChild(span);
+                        index++;
+                    } else {
+                        clearInterval(interval);
+                        resolve();
+                    }
+                }, delay);
+            });
+        }
 
-<a href="https://api.whatsapp.com/send?phone=+919120920817&text=Hi%20Yash,%20I%20am%20interested%20in%20your%20services!" target="_blank" id="whatsappBtn">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-</a>
+        async function runPreloader() {
+            await new Promise(resolve => setTimeout(resolve, 500));
+            await animateText(preloaderTitle, mainText, 100);
+            await new Promise(resolve => setTimeout(resolve, 300));
+            preloaderSubtitle.textContent = subText;
+            preloaderSubtitle.style.opacity = '1';
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            preloader.style.opacity = '0';
+            await new Promise(resolve => setTimeout(resolve, 800));
+            preloader.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
 
-<script>
-const words=["Freelancer","Web Designer","AI Developer","Creative Coder"];
-let i=0,j=0,isDeleting=false;
-const typing=document.getElementById('typing');
-function type(){
-  const current=words[i];
-  typing.innerHTML=current.substring(0,j);
-  if(!isDeleting && j<current.length){j++;setTimeout(type,150);}
-  else if(isDeleting && j>0){j--;setTimeout(type,100);}
-  else{isDeleting=!isDeleting;if(!isDeleting)i=(i+1)%words.length;setTimeout(type,800);}
-}
-type();
+        runPreloader();
 
-document.getElementById('seeProjects').addEventListener('click',()=>{
-  window.location.href='projects.html';
-});
+        // ========== TYPEWRITER EFFECT ==========
+        const typewriterText = document.getElementById('typewriterText');
+        const lines = [
+            "Hi, I'm Yash Prajapati.",
+            "I design and develop modern, animated, and high-performing websites."
+        ];
+        let lineIndex = 0;
+        let charIndex = 0;
+        let currentText = '';
 
-const phoneNumber="+919120920817"; 
-const message="Hi Yash, I checked your portfolio and I'm interested in hiring you.";
-document.getElementById('hireMe').addEventListener('click',()=>{
-  window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`,'_blank');
-});
+        function typeWriter() {
+            if (lineIndex < lines.length) {
+                if (charIndex < lines[lineIndex].length) {
+                    currentText += lines[lineIndex].charAt(charIndex);
+                    typewriterText.innerHTML = currentText.replace(/\n/g, '<br>') + '<span class="cursor"></span>';
+                    charIndex++;
+                    setTimeout(typeWriter, 50);
+                } else {
+                    if (lineIndex < lines.length - 1) {
+                        currentText += '\n';
+                        lineIndex++;
+                        charIndex = 0;
+                        setTimeout(typeWriter, 500);
+                    }
+                }
+            }
+        }
 
-const hamburger=document.getElementById('hamburger');
-const mobileNav=document.getElementById('mobileNav');
-hamburger.addEventListener('click',()=>{mobileNav.classList.toggle('show');});
+        setTimeout(typeWriter, 1000);
 
-const canvas=document.getElementById('bgCanvas');
-const ctx=canvas.getContext('2d');
-let w=canvas.width=window.innerWidth;let h=canvas.height=window.innerHeight;
-const particles=[];
-for(let k=0;k<150;k++){
-  particles.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-0.5)*1,vy:(Math.random()-0.5)*1,radius:Math.random()*2+1,color:`hsl(${Math.random()*360},70%,70%)`});
-}
-function animate(){
-  ctx.clearRect(0,0,w,h);
-  particles.forEach(p=>{
-    p.x+=p.vx;p.y+=p.vy;
-    if(p.x<0)p.x=w;if(p.x>w)p.x=0;if(p.y<0)p.y=h;if(p.y>h)p.y=0;
-    ctx.beginPath();ctx.arc(p.x,p.y,p.radius,0,Math.PI*2);
-    ctx.fillStyle=p.color;ctx.shadowBlur=10;ctx.shadowColor=p.color;ctx.fill();
-  });
-  requestAnimationFrame(animate);
-}
-animate();
-window.addEventListener('resize',()=>{w=canvas.width=window.innerWidth;h=canvas.height=window.innerHeight;});
-</script>
+        // ========== PARTICLE SYSTEM ==========
+        const particleContainer = document.getElementById('particleContainer');
+        for (let i = 0; i < 50; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.setProperty('--tx', (Math.random() - 0.5) * 500 + 'px');
+            particle.style.setProperty('--ty', (Math.random() - 0.5) * 500 + 'px');
+            particle.style.animationDelay = Math.random() * 10 + 's';
+            particleContainer.appendChild(particle);
+        }
+
+        // ========== CODE MATRIX EFFECT ==========
+        const codeMatrix = document.getElementById('codeMatrix');
+        const codeChars = '01<>{}[]();=/\\';
+        for (let i = 0; i < 30; i++) {
+            const column = document.createElement('div');
+            column.className = 'code-column';
+            column.style.left = Math.random() * 100 + '%';
+            column.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            column.style.animationDelay = Math.random() * 5 + 's';
+            let text = '';
+            for (let j = 0; j < 20; j++) {
+                text += codeChars[Math.floor(Math.random() * codeChars.length)] + '\n';
+            }
+            column.textContent = text;
+            codeMatrix.appendChild(column);
+        }
+
+        // ========== SCROLL ANIMATIONS ==========
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ========== CONTACT FORM ==========
+        const contactForm = document.getElementById('contactForm');
+        const modal = document.getElementById('modal');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappMessage = `Hi Yash, I want to discuss a project.
+
+Name: ${name}
+Email: ${email}
+Message: ${message}`;
+
+            modal.classList.add('active');
+            
+            setTimeout(() => {
+                window.open(`https://wa.me/9120920918?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+                modal.classList.remove('active');
+                contactForm.reset();
+            }, 2000);
+        });
+
+        // Close modal on click outside
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        // ========== SMOOTH SCROLL ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ========== GRADIENT ANIMATION ==========
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes gradientShift {
+                0%, 100% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // ========== PERFORMANCE OPTIMIZATION ==========
+        // Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.add('loaded');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img').forEach(img => imageObserver.observe(img));
+        }
+
+        // Console Art
+        console.log('%c👋 Hey there, Developer!', 'font-size: 24px; font-weight: bold; color: #3B82F6;');
+        console.log('%cLike what you see? Let\'s connect!', 'font-size: 16px; color: #8B5CF6;');
+        console.log('%cWhatsApp: https://wa.me/9120920918', 'font-size: 14px; color: #25D366;');
+    </script>
+
 </body>
 </html>
