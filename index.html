@@ -237,7 +237,7 @@
             min-height: 100vh; display: flex; align-items: center; justify-content: center;
             text-align: center; padding: 0 2rem; position: relative;
         }
-        .hero-content { opacity: 0; position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; } 
+        .hero-content { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; } 
         
         .hero-glow {
             position: absolute; width: 600px; height: 600px;
@@ -516,7 +516,7 @@
                 </div>
                 <div class="p-content">
                     <div>
-                        <h3>INDOSWISS MEDICON </h3>
+                        <h3>Indoswiss Medicon</h3>
                         <p class="p-desc">A high-trust interface for medical professionals, focusing on clarity and appointment efficiency.</p>
                         <div class="tags">
                             <span class="tag">React</span>
@@ -524,7 +524,7 @@
                             <span class="tag">UX Research</span>
                         </div>
                     </div>
-                    <a href="https://yash817.github.io/medical-website-/" class="visit-btn">Visit Live Site <i class="ph ph-arrow-up-right"></i></a>
+                    <a href="https://yash817.github.io/medical-website-/" target="_blank" class="visit-btn">Visit Live Site <i class="ph ph-arrow-up-right"></i></a>
                 </div>
             </div>
 
@@ -605,8 +605,12 @@
         function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
         requestAnimationFrame(raf);
 
-        // --- 2. ADVANCED CINEMATIC PRELOADER ---
+        // --- 2. ADVANCED CINEMATIC PRELOADER & VISIBILITY FIX ---
         window.onload = () => {
+            // Set initial states to avoid FOUC (Flash of Unstyled Content)
+            gsap.set(".navbar", { y: -50, opacity: 0 });
+            gsap.set(".hero-content > *", { y: 50, opacity: 0 });
+
             const tl = gsap.timeline();
 
             // Sequence: STRATEGY -> DESIGN -> CODE
@@ -629,9 +633,8 @@
             
             // Site Reveal
               .to(".navbar", { y: 0, opacity: 1, duration: 1, ease: "power3.out" }, "-=0.5")
-              .to(".hero-content", { opacity: 1, duration: 0.1 }, "-=1") // Ensure container is visible
-              .from(".hero-content > *", { 
-                  y: 50, opacity: 0, duration: 1, stagger: 0.15, ease: "power3.out" 
+              .to(".hero-content > *", { 
+                  y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" 
               }, "-=0.8");
         };
 
@@ -817,4 +820,3 @@
     </script>
 </body>
 </html>
-
