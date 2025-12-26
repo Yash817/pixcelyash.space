@@ -4,48 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO & META TAGS -->
-    <title>PIXCEL YASH | Creative Web Developer</title>
-    <meta name="description" content="Hire PIXCEL YASH, a top-rated Freelance Web Developer in India. Specializing in high-performance, cinematic 3D websites, React, Three.js, and digital storytelling.">
-    <meta name="keywords" content="PIXCEL YASH, Yash Prajapati, Web Developer, Freelance Web Developer India, Creative Coder, 3D Web Design, React Developer, Three.js Specialist, Website Maker">
-    <meta name="author" content="PIXCEL YASH">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://pixcelyash.space"> 
+    <!-- SEO & META TAGS (ADVANCED OPTIMIZATION) -->
+    <title>Yash Prajapati | Top Freelance Web Developer India | PIXCEL YASH</title>
+    <meta name="description" content="Hire Yash Prajapati (PIXCEL YASH), India's best Freelance Web Developer. Expert in 3D cinematic websites, React, and high-performance digital solutions. Turn your vision into reality.">
+    <meta name="keywords" content="Yash Prajapati, PIXCEL YASH, Web Developer India, Best Freelance Web Developer, Hire Web Developer, 3D Website, Three.js Expert, React Developer, Website Maker India, Yash Prajapati Portfolio">
+    <meta name="author" content="Yash Prajapati">
+    <link rel="canonical" href="https://pixcelyash.space">
 
-    <!-- OPEN GRAPH (For WhatsApp, LinkedIn, Facebook previews) -->
-    <meta property="og:title" content="PIXCEL YASH | Architecting Digital Excellence">
-    <meta property="og:description" content="Turning visions into digital reality. Explore the portfolio of PIXCEL YASH, a creative developer merging financial logic with cinematic web experiences.">
-    <meta property="og:image" content="https://i.postimg.cc/kMh5ZGjX/Whats-App-Image-2025-10-24-at-11-34-24-AM.jpg">
-    <meta property="og:url" content="https://pixcelyash.space">
+    <!-- OPEN GRAPH (Facebook/WhatsApp/LinkedIn) -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="PIXCEL YASH Portfolio">
+    <meta property="og:url" content="https://pixcelyash.space">
+    <meta property="og:title" content="Yash Prajapati | Architecting Digital Excellence">
+    <meta property="og:description" content="Looking for a premium website? I build cinematic, high-performance websites that drive growth.">
+    <meta property="og:image" content="https://i.postimg.cc/kMh5ZGjX/Whats-App-Image-2025-10-24-at-11-34-24-AM.jpg">
 
     <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PIXCEL YASH | Creative Web Developer">
-    <meta name="twitter:description" content="High-end 3D websites and digital experiences. Hire PIXCEL YASH for your next project.">
+    <meta name="twitter:title" content="Yash Prajapati | Creative Web Developer">
+    <meta name="twitter:description" content="Transforming ideas into digital reality. Hire Yash Prajapati for your next web project.">
     <meta name="twitter:image" content="https://i.postimg.cc/kMh5ZGjX/Whats-App-Image-2025-10-24-at-11-34-24-AM.jpg">
 
-    <!-- STRUCTURED DATA (JSON-LD) for Google -->
+    <!-- GOOGLE STRUCTURED DATA (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "PIXCEL YASH",
-      "jobTitle": "Freelance Web Developer",
+      "name": "Yash Prajapati",
+      "alternateName": "PIXCEL YASH",
       "url": "https://pixcelyash.space",
       "image": "https://i.postimg.cc/kMh5ZGjX/Whats-App-Image-2025-10-24-at-11-34-24-AM.jpg",
+      "jobTitle": "Freelance Web Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "PIXCEL YASH"
+      },
       "sameAs": [
-        "https://www.instagram.com/yash.mme/",
-        "https://www.linkedin.com/in/yash-prajapati", 
+        "https://www.instagram.com/pixcelyash.space/",
+        "https://www.linkedin.com/in/yash-prajapati",
         "https://github.com/yash-prajapati"
       ],
-      "description": "PIXCEL YASH is a freelance web developer and creative coder based in India, specializing in building cinematic, high-performance websites using React and Three.js.",
-      "knowsAbout": ["Web Development", "Three.js", "React", "JavaScript", "SEO", "UI/UX Design"]
+      "description": "Yash Prajapati is a top-rated freelance web developer in India, specializing in building immersive 3D websites and high-performance web applications.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "India",
+        "addressCountry": "IN"
+      }
     }
     </script>
-
-    <!-- Fonts: Outfit (Clean) & Space Grotesk (Futuristic) -->
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -55,7 +62,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    <!-- Phosphor Icons for WhatsApp logo -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <style>
@@ -69,12 +75,13 @@
             --gradient-main: linear-gradient(135deg, #3b82f6, #8b5cf6);
             --font-body: 'Outfit', sans-serif;
             --font-display: 'Space Grotesk', sans-serif;
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1); 
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; cursor: none; }
 
         html, body {
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden;
             width: 100%;
         }
 
@@ -88,23 +95,29 @@
         .cursor-follower {
             position: fixed; top: 0; left: 0;
             width: 20px; height: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 50%;
-            pointer-events: none; z-index: 9999;
+            pointer-events: none; 
+            z-index: 100000; 
             transform: translate(-50%, -50%);
-            transition: width 0.3s, height 0.3s, background 0.3s;
+            transition: width 0.4s var(--ease-out-expo), height 0.4s var(--ease-out-expo), background 0.4s var(--ease-out-expo);
             backdrop-filter: blur(2px);
         }
         .cursor-dot {
             position: fixed; top: 0; left: 0;
-            width: 6px; height: 6px;
+            width: 4px; height: 4px;
             background: white;
             border-radius: 50%;
-            pointer-events: none; z-index: 10000;
+            pointer-events: none; 
+            z-index: 100001; 
             transform: translate(-50%, -50%);
         }
         body:hover .cursor-follower { opacity: 1; }
+
+        /* Restore pointer for inputs/buttons */
+        input, select, textarea { cursor: text !important; }
+        button, a, .close-modal, .buy-submit-btn, .hamburger, .close-menu { cursor: pointer !important; }
 
         /* --- BACKGROUND & OVERLAYS --- */
         #webgl-canvas {
@@ -113,16 +126,14 @@
         }
         .noise-overlay {
             position: fixed; inset: 0; pointer-events: none; z-index: 0;
-            opacity: 0.04;
+            opacity: 0.035;
             background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
-        /* Cinematic Vignette */
         .vignette {
             position: fixed; inset: 0; pointer-events: none; z-index: 1;
-            background: radial-gradient(circle, transparent 50%, rgba(0,0,0,0.7) 100%);
+            background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.8) 100%);
         }
 
-        /* --- STORYTELLING LINES --- */
         .story-line {
             position: absolute; left: 5vw; top: 0; bottom: 0; width: 1px;
             background: rgba(255,255,255,0.05); z-index: -1;
@@ -141,24 +152,24 @@
             border-radius: 50%; text-align: center;
             font-size: 32px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             z-index: 5000; display: flex; align-items: center; justify-content: center;
-            text-decoration: none; transition: all 0.3s ease;
-            cursor: pointer;
+            text-decoration: none; 
+            transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo);
         }
         .whatsapp-float:hover { 
-            transform: scale(1.1); 
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transform: scale(1.1) rotate(10deg); 
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
         }
         .whatsapp-pulse {
             position: absolute; width: 100%; height: 100%;
             border-radius: 50%; border: 2px solid #25d366;
-            animation: pulse-border 2s infinite; pointer-events: none;
+            animation: pulse-border 2.5s infinite; pointer-events: none;
         }
         @keyframes pulse-border {
             0% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(1.5); opacity: 0; }
+            100% { transform: scale(1.6); opacity: 0; }
         }
 
-        /* --- PRELOADER (UNCHANGED) --- */
+        /* --- PRELOADER --- */
         .preloader {
             position: fixed; inset: 0; z-index: 10000;
             background: #030304;
@@ -169,7 +180,7 @@
             position: absolute; width: 100%; text-align: center;
             font-family: var(--font-display); font-weight: 700;
             font-size: clamp(3rem, 8vw, 6rem); color: #fff;
-            opacity: 0; transform: translateY(20px); letter-spacing: -0.02em;
+            opacity: 0; transform: translateY(30px); letter-spacing: -0.02em;
         }
         .final-reveal {
             position: absolute; width: 100%; text-align: center;
@@ -196,41 +207,59 @@
             padding: 1rem 2rem;
             display: flex; justify-content: space-between; align-items: center;
             z-index: 100;
-            background: rgba(10, 10, 12, 0.5);
-            backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(10, 10, 12, 0.4);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 100px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.6s var(--ease-out-expo);
             opacity: 0; 
         }
         .navbar.scrolled {
-            top: 1rem; padding: 0.8rem 2rem; width: 95%; background: rgba(5, 5, 5, 0.85);
+            top: 1rem; padding: 0.8rem 2rem; width: 95%; background: rgba(5, 5, 5, 0.8);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
         .logo { 
             font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; 
             letter-spacing: 1px; color: #fff; display: flex; align-items: center; gap: 10px;
         }
-        .logo-dot { width: 6px; height: 6px; background: var(--accent-blue); border-radius: 50%; box-shadow: 0 0 10px var(--accent-blue); }
+        .logo-dot { width: 6px; height: 6px; background: var(--accent-blue); border-radius: 50%; box-shadow: 0 0 15px var(--accent-blue); }
+        
         .nav-links { display: flex; gap: 2.5rem; }
         .nav-link {
             text-decoration: none; color: #ccc; font-size: 0.9rem; font-weight: 500;
-            position: relative; transition: color 0.3s;
+            position: relative; transition: color 0.4s var(--ease-out-expo);
         }
         .nav-link::before {
             content: ''; position: absolute; bottom: -5px; left: 50%; width: 0; height: 1px;
-            background: #fff; transition: all 0.3s ease; transform: translateX(-50%);
+            background: #fff; transition: width 0.4s var(--ease-out-expo); transform: translateX(-50%);
         }
         .nav-link:hover { color: #fff; }
         .nav-link:hover::before { width: 100%; }
         
         .nav-btn {
-            padding: 0.6rem 1.5rem; border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.6rem 1.5rem; border: 1px solid rgba(255,255,255,0.15);
             border-radius: 30px; font-size: 0.85rem; color: #fff;
-            text-decoration: none; transition: all 0.3s;
-            background: rgba(255,255,255,0.05); cursor: pointer;
+            text-decoration: none; transition: all 0.5s var(--ease-out-expo);
+            background: rgba(255,255,255,0.02);
         }
-        .nav-btn:hover { background: #fff; color: #000; border-color: #fff; }
+        .nav-btn:hover { background: #fff; color: #000; border-color: #fff; transform: scale(1.05); }
+
+        /* Hamburger Menu */
+        .hamburger { display: none; font-size: 1.5rem; color: #fff; cursor: pointer; }
+        
+        .mobile-menu-overlay {
+            position: fixed; inset: 0; background: #030304; z-index: 200;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2rem;
+            transform: translateY(-100%); transition: transform 0.6s var(--ease-out-expo);
+        }
+        .mobile-menu-overlay.active { transform: translateY(0); }
+        .mobile-link {
+            font-family: var(--font-display); font-size: 2rem; color: #fff; text-decoration: none;
+            opacity: 0; transform: translateY(20px); transition: all 0.4s;
+        }
+        .mobile-menu-overlay.active .mobile-link { opacity: 1; transform: translateY(0); }
+        .close-menu { position: absolute; top: 2rem; right: 2rem; font-size: 2rem; color: #fff; cursor: pointer; }
 
         /* --- HERO --- */
         .hero {
@@ -240,8 +269,8 @@
         .hero-content { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; } 
         
         .hero-glow {
-            position: absolute; width: 600px; height: 600px;
-            background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(0,0,0,0) 70%);
+            position: absolute; width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, rgba(0,0,0,0) 70%);
             top: 50%; left: 50%; transform: translate(-50%, -50%);
             z-index: -1; pointer-events: none;
         }
@@ -252,12 +281,12 @@
             font-size: 0.85rem; color: #fff; margin-bottom: 2rem;
             letter-spacing: 1px; backdrop-filter: blur(5px);
         }
-        .hero-label::before { content: ''; width: 6px; height: 6px; background: #25d366; border-radius: 50%; }
+        .hero-label::before { content: ''; width: 6px; height: 6px; background: #25d366; border-radius: 50%; box-shadow: 0 0 10px #25d366; }
         
         .hero h1 {
             font-family: var(--font-display); font-size: clamp(2.8rem, 8vw, 7.5rem);
-            line-height: 1.1; margin-bottom: 1.5rem; font-weight: 600; letter-spacing: -0.02em;
-            text-shadow: 0 0 40px rgba(59, 130, 246, 0.4); /* Cinematic Glow */
+            line-height: 1.1; margin-bottom: 1.5rem; font-weight: 600; letter-spacing: -0.03em;
+            text-shadow: 0 0 50px rgba(59, 130, 246, 0.3);
         }
         .gradient-text {
             background: var(--gradient-main);
@@ -274,15 +303,15 @@
         .cta-btn {
             padding: 1.1rem 2.8rem; background: #fff; color: #000;
             border-radius: 50px; text-decoration: none; font-weight: 600;
-            transition: all 0.3s ease; display: inline-block; position: relative; overflow: hidden;
+            transition: all 0.5s var(--ease-out-expo); display: inline-block; position: relative; overflow: hidden;
             border: 1px solid transparent; cursor: pointer; white-space: nowrap;
         }
         .cta-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
         }
         .cta-outline {
-            background: transparent; border: 1px solid rgba(255,255,255,0.3); color: #fff;
+            background: transparent; border: 1px solid rgba(255,255,255,0.2); color: #fff;
         }
         .cta-outline:hover {
             background: #fff; color: #000; border-color: #fff;
@@ -290,7 +319,7 @@
         }
 
         /* --- SECTIONS (Shared) --- */
-        .section-padding { padding: 10rem 5vw; position: relative; max-width: 1400px; margin: 0 auto; z-index: 2; }
+        .section-padding { padding: 12rem 5vw; position: relative; max-width: 1400px; margin: 0 auto; z-index: 2; }
         
         /* --- ABOUT --- */
         .about-grid {
@@ -298,14 +327,15 @@
         }
         .photo-card {
             position: relative; width: 100%; aspect-ratio: 3/4; max-width: 400px; margin: 0 auto;
-            border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);
             transform-style: preserve-3d;
+            transition: transform 0.6s var(--ease-out-expo);
         }
         .photo-card img {
-            width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s;
-            filter: grayscale(100%);
+            width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease-out-expo);
+            filter: grayscale(100%) contrast(1.1);
         }
-        .photo-card:hover img { transform: scale(1.05); filter: grayscale(0%); }
+        .photo-card:hover img { transform: scale(1.1); filter: grayscale(0%) contrast(1); }
         .photo-card::after {
             content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); opacity: 0.6;
         }
@@ -324,17 +354,26 @@
         .section-header h2 { font-size: clamp(2.5rem, 5vw, 4rem); font-family: var(--font-display); margin-bottom: 1rem; }
         .section-header p { color: var(--text-muted); max-width: 500px; font-size: 1.1rem; }
 
-        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; }
+        /* Responsive Grid: Changed minmax to 290px for better mobile fit */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 3rem; }
+        
         .project-card {
             background: var(--card-bg); border-radius: 20px; overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.05); transition: transform 0.4s;
+            border: 1px solid rgba(255,255,255,0.05); 
             display: flex; flex-direction: column;
             backdrop-filter: blur(10px);
+            opacity: 0; transform: translateY(50px); 
+            transition: transform 0.6s var(--ease-out-expo), border-color 0.6s var(--ease-out-expo), background-color 0.6s;
         }
-        .project-card:hover { transform: translateY(-10px); border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
+        .project-card:hover { 
+            transform: translateY(-15px) !important; 
+            border-color: rgba(255,255,255,0.2); 
+            background: rgba(255,255,255,0.04); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
         .p-image { height: 280px; overflow: hidden; position: relative; }
-        .p-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease-in-out; }
-        .project-card:hover .p-image img { transform: scale(1.1); }
+        .p-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.5s var(--ease-out-expo); }
+        .project-card:hover .p-image img { transform: scale(1.08); }
         .p-content { padding: 2rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
         .p-content h3 { font-size: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-display); }
         .p-desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.5; }
@@ -344,12 +383,12 @@
         .visit-btn {
             display: inline-flex; align-items: center; gap: 8px;
             font-size: 0.9rem; font-weight: 500; color: var(--accent-blue);
-            text-decoration: none; transition: all 0.3s ease;
-            margin-top: auto;
+            text-decoration: none; transition: all 0.4s var(--ease-out-expo);
+            margin-top: auto; padding: 0.5rem 0;
+            cursor: pointer;
         }
-        .visit-btn i { font-size: 1.1rem; transition: transform 0.3s; }
+        .visit-btn i { font-size: 1.1rem; transition: transform 0.4s var(--ease-out-expo); }
         .visit-btn:hover { color: #fff; gap: 12px; }
-        .visit-btn:hover i { transform: translateX(2px) translateY(-2px); }
         
         .coming-soon-lock {
             display: inline-flex; align-items: center; gap: 8px;
@@ -357,6 +396,70 @@
             opacity: 0.7; cursor: not-allowed; margin-top: auto;
         }
 
+        /* PREMIUM BADGE */
+        .premium-badge {
+            position: absolute; top: 15px; right: 15px;
+            background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(10px);
+            border: 1px solid var(--accent-purple); color: #fff;
+            padding: 5px 12px; border-radius: 20px;
+            font-size: 0.85rem; font-weight: 600; font-family: var(--font-display);
+            z-index: 10; box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        /* --- BUY MODAL STYLES --- */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.8);
+            z-index: 99999; display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: all 0.4s var(--ease-out-expo);
+            backdrop-filter: blur(5px);
+        }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        
+        .modal-content {
+            background: rgba(15, 15, 18, 0.95);
+            border: 1px solid rgba(255,255,255,0.1);
+            width: 90%; max-width: 500px; padding: 2.5rem;
+            border-radius: 20px; position: relative;
+            transform: scale(0.9) translateY(20px);
+            transition: all 0.5s var(--ease-out-expo);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+        }
+        .modal-overlay.active .modal-content { transform: scale(1) translateY(0); }
+        
+        .close-modal {
+            position: absolute; top: 1.5rem; right: 1.5rem; color: #fff; font-size: 1.5rem;
+            cursor: pointer; opacity: 0.6; transition: 0.3s;
+        }
+        .close-modal:hover { opacity: 1; transform: rotate(90deg); }
+        
+        .modal-title { font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .product-info { 
+            display: flex; justify-content: space-between; align-items: center; 
+            margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); 
+        }
+        .product-name { color: var(--accent-purple); font-weight: 600; }
+        .product-price { background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 5px; font-size: 0.9rem; }
+        
+        .form-group { margin-bottom: 1.5rem; }
+        .form-label { display: block; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .form-input, .form-select {
+            width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
+            color: #fff; padding: 12px; border-radius: 10px; font-family: var(--font-body);
+            transition: 0.3s;
+        }
+        .form-input:focus, .form-select:focus { outline: none; border-color: var(--accent-blue); background: rgba(255,255,255,0.05); }
+        
+        .buy-submit-btn {
+            width: 100%; padding: 1rem; background: var(--gradient-main);
+            color: #fff; border: none; border-radius: 10px; font-weight: 600;
+            font-size: 1rem; cursor: pointer; transition: 0.3s; margin-top: 1rem;
+        }
+        .buy-submit-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); }
+
+        .thank-you-message {
+            text-align: center; display: none;
+        }
+        .check-icon { font-size: 4rem; color: #25d366; margin-bottom: 1rem; }
 
         /* --- FOOTER --- */
         footer {
@@ -372,11 +475,14 @@
             margin-top: 6rem; padding-top: 4rem; border-top: 1px solid rgba(255,255,255,0.1);
         }
         .f-col h4 { color: #fff; margin-bottom: 1.5rem; font-family: var(--font-display); font-size: 1.1rem; }
-        .f-link { display: block; color: var(--text-muted); text-decoration: none; margin-bottom: 1rem; transition: color 0.3s; font-size: 1rem; cursor: pointer; }
+        .f-link { display: block; color: var(--text-muted); text-decoration: none; margin-bottom: 1rem; transition: color 0.4s; font-size: 1rem; cursor: pointer; }
         .f-link:hover { color: #fff; }
         .copyright { margin-top: 6rem; text-align: center; color: rgba(255,255,255,0.2); font-size: 0.9rem; }
+        .dynamic-greeting {
+            color: var(--accent-blue); display: block; margin-bottom: 0.5rem; font-family: var(--font-display); letter-spacing: 1px;
+        }
 
-        /* --- RESPONSIVE OPTIMIZATIONS --- */
+        /* --- RESPONSIVE --- */
         @media (max-width: 1024px) {
             .about-grid { grid-template-columns: 1fr; gap: 4rem; }
             .photo-card { max-width: 100%; aspect-ratio: 16/9; }
@@ -384,33 +490,43 @@
         }
 
         @media (max-width: 768px) {
-            .navbar { padding: 0.8rem 1.5rem; width: 95%; }
-            .nav-links { display: none; } /* Mobile Menu would go here ideally */
+            .navbar { padding: 0.8rem 1.5rem; width: 95%; justify-content: space-between; }
+            .nav-links { display: none; } /* Hide standard links */
+            .hamburger { display: block; } /* Show hamburger */
+            .nav-btn { display: none; } /* Hide hire me button on nav, moved to mobile menu */
+            
             .hero-btns { flex-direction: column; width: 100%; gap: 1rem; }
             .cta-btn { width: 100%; text-align: center; }
-            .section-padding { padding: 5rem 1.5rem; }
-            .section-header { padding-left: 1rem; border-width: 2px; }
-            .stats-row { flex-direction: row; flex-wrap: wrap; gap: 2rem; }
+            
+            .section-padding { padding: 6rem 1.5rem; }
+            .section-header { padding-left: 1rem; border-width: 2px; margin-bottom: 4rem; }
+            .section-header h2 { font-size: 2.5rem; }
+            
+            .stats-row { flex-direction: row; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; }
             .stat { flex: 1 1 40%; }
-            .project-grid { grid-template-columns: 1fr; }
-            .footer-links { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            
+            .project-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .project-card { transform: none !important; opacity: 1 !important; } /* Simplify animation for mobile */
+            
+            .footer-links { grid-template-columns: 1fr; gap: 3rem; }
             .story-line { display: none; }
-            .cursor-follower, .cursor-dot { display: none; } /* Hide custom cursor on touch devices */
+            .cursor-follower, .cursor-dot { display: none; } /* Hide custom cursor on touch */
+            
+            .modal-content { padding: 1.5rem; width: 95%; }
+            .modal-title { font-size: 1.5rem; }
         }
-
+        
         @media (max-width: 480px) {
-            .hero-label { font-size: 0.75rem; padding: 0.4rem 1rem; }
-            .about-text p { font-size: 1rem; }
-            .footer-cta h2 { font-size: 2rem; }
-            .footer-links { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 3rem; }
+            .project-grid { grid-template-columns: 1fr; }
+            .stats-row { gap: 1.5rem; }
             .stat { flex: 1 1 100%; }
-            .whatsapp-float { width: 50px; height: 50px; font-size: 24px; bottom: 20px; right: 20px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- CURSOR (Hidden on Mobile) -->
+    <!-- CURSOR -->
     <div class="cursor-follower"></div>
     <div class="cursor-dot"></div>
 
@@ -424,6 +540,15 @@
     <div class="noise-overlay"></div>
     <div class="vignette"></div>
     <canvas id="webgl-canvas"></canvas>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <i class="ph ph-x close-menu" onclick="toggleMenu()"></i>
+        <a href="#about" class="mobile-link" onclick="toggleMenu()">About</a>
+        <a href="#work" class="mobile-link" onclick="toggleMenu()">Work</a>
+        <a href="javascript:void(0)" onclick="openWhatsApp(); toggleMenu()" class="mobile-link">Contact</a>
+        <a href="javascript:void(0)" onclick="openWhatsApp(); toggleMenu()" class="mobile-link" style="color: var(--accent-blue);">Hire Me</a>
+    </div>
 
     <!-- CINEMATIC PRELOADER -->
     <div class="preloader">
@@ -450,6 +575,10 @@
             <a href="javascript:void(0)" onclick="openWhatsApp()" class="nav-link hover-trigger">Contact</a>
         </div>
         <a href="javascript:void(0)" onclick="openWhatsApp()" class="nav-btn hover-trigger">Hire Me</a>
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="ph ph-list"></i>
+        </div>
     </nav>
 
     <!-- HERO -->
@@ -473,7 +602,7 @@
 
     <!-- ABOUT -->
     <section id="about" class="section-padding">
-        <div class="story-line"></div> <!-- Storytelling line -->
+        <div class="story-line"></div>
         <span class="chapter-marker reveal-text">01. The Origin Story</span>
         <div class="about-grid">
             <div class="photo-card hover-trigger" id="tiltCard">
@@ -505,17 +634,19 @@
         </div>
     </section>
 
-    <!-- WORK -->
+    <!-- WORK (UPDATED) -->
     <section id="work" class="section-padding">
         <div class="story-line"></div>
         <span class="chapter-marker reveal-text">02. Selected Artifacts</span>
+        
+        <!-- SECTION 1: CLIENT PROJECTS -->
         <div class="section-header">
             <h2 class="reveal-text">Curated Works</h2>
-            <p class="reveal-text">Recent projects where logic meets motion. Click to experience them live.</p>
+            <p class="reveal-text">Recent projects where logic meets motion. Custom built for clients.</p>
         </div>
 
         <div class="project-grid">
-            <!-- Project 1 (ACTIVE) -->
+            <!-- Project 1 -->
             <div class="project-card hover-trigger">
                 <div class="p-image">
                     <img src="https://i.postimg.cc/L8FGzct2/medical-website.png" alt="Medical UI">
@@ -527,43 +658,103 @@
                         <div class="tags">
                             <span class="tag">React</span>
                             <span class="tag">Tailwind</span>
-                            <span class="tag">UX Research</span>
                         </div>
                     </div>
                     <a href="https://yash817.github.io/medical-website-/" target="_blank" class="visit-btn">Visit Live Site <i class="ph ph-arrow-up-right"></i></a>
                 </div>
             </div>
 
-            <!-- Project 2 (LOCKED) -->
-            <div class="project-card hover-trigger" style="opacity: 0.7;">
+            <!-- Project 2 -->
+            <div class="project-card hover-trigger">
                 <div class="p-image">
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" alt="E-Commerce" style="filter: grayscale(100%);">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" alt="Finance Dashboard">
                 </div>
                 <div class="p-content">
                     <div>
-                        <h3>Coming Soon</h3>
-                        <p class="p-desc">A revolutionary digital commerce experience currently under stealth development.</p>
+                        <h3>FinTech Dashboard</h3>
+                        <p class="p-desc">Real-time financial data visualization for CA firms.</p>
                         <div class="tags">
-                            <span class="tag">Under Construction</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">React</span>
                         </div>
                     </div>
-                    <span class="coming-soon-lock"><i class="ph ph-lock-key"></i> In Progress</span>
+                    <span class="coming-soon-lock"><i class="ph ph-lock-key"></i> Client Confidential</span>
                 </div>
             </div>
-             <!-- Project 3 (LOCKED) -->
-             <div class="project-card hover-trigger" style="opacity: 0.7;">
+        </div>
+
+        <!-- SECTION 2: PAID TEMPLATES -->
+        <div class="section-header" style="margin-top: 10rem; border-left-color: var(--accent-purple);">
+            <h2 class="reveal-text">Premium Templates</h2>
+            <p class="reveal-text">High-end, pre-built websites available for purchase. Ready to deploy.</p>
+        </div>
+
+        <div class="project-grid">
+            <!-- Template 1: Forever Love (UPDATED) -->
+            <div class="project-card hover-trigger">
                 <div class="p-image">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop" alt="Dashboard" style="filter: grayscale(100%);">
+                    <!-- Wedding/Love Themed Image -->
+                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2670&auto=format&fit=crop" alt="Love Template">
+                    <div class="premium-badge">₹199 INR</div>
                 </div>
                 <div class="p-content">
                     <div>
-                        <h3>Coming Soon</h3>
-                        <p class="p-desc">Advanced data visualization dashboard for financial assets. Launching soon.</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3>Forever Us Invite</h3>
+                        </div>
+                        <p class="p-desc">A stunning, animated digital invitation template for weddings and anniversaries. Create memories that last.</p>
                         <div class="tags">
-                            <span class="tag">Under Construction</span>
+                            <span class="tag" style="border-color: var(--accent-purple); color: var(--accent-purple);">Premium</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Animation</span>
                         </div>
                     </div>
-                    <span class="coming-soon-lock"><i class="ph ph-lock-key"></i> In Progress</span>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: auto; flex-wrap: wrap;">
+                        <a href="https://yash817.github.io/love-tamplet-by-yash-/" target="_blank" class="visit-btn">
+                            <i class="ph ph-desktop"></i> Live Preview
+                        </a>
+                        <!-- UPDATED BUY BUTTON CALL -->
+                        <a href="javascript:void(0)" onclick="openBuyModal('Forever Us Invite', '199')" class="visit-btn" style="color: #fff; opacity: 0.8;">
+                             Buy Now <i class="ph ph-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 2: Coming Soon -->
+            <div class="project-card hover-trigger" style="opacity: 0.7;">
+                <div class="p-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" alt="SaaS Template" style="filter: grayscale(100%);">
+                    <div class="premium-badge">Coming Soon</div>
+                </div>
+                <div class="p-content">
+                    <div>
+                        <h3>Agency Portfolio V2</h3>
+                        <p class="p-desc">Next-gen portfolio template for creative agencies.</p>
+                        <div class="tags">
+                            <span class="tag">Under Development</span>
+                        </div>
+                    </div>
+                    <span class="coming-soon-lock"><i class="ph ph-lock-key"></i> Not Available Yet</span>
+                </div>
+            </div>
+            
+             <!-- Template 3: Coming Soon -->
+             <div class="project-card hover-trigger" style="opacity: 0.7;">
+                <div class="p-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop" alt="SaaS Template" style="filter: grayscale(100%);">
+                    <div class="premium-badge">Coming Soon</div>
+                </div>
+                <div class="p-content">
+                    <div>
+                        <h3>E-Commerce Starter</h3>
+                        <p class="p-desc">Complete e-commerce frontend kit.</p>
+                        <div class="tags">
+                            <span class="tag">Under Development</span>
+                        </div>
+                    </div>
+                    <span class="coming-soon-lock"><i class="ph ph-lock-key"></i> Not Available Yet</span>
                 </div>
             </div>
         </div>
@@ -597,47 +788,98 @@
         </div>
 
         <div class="copyright">
+            <!-- DYNAMIC GREETING PLACEHOLDER -->
+            <span id="dynamicGreeting" class="dynamic-greeting"></span>
             © 2025 PIXCEL YASH. Crafted with Logic & Code.
         </div>
     </footer>
 
+    <!-- BUY NOW MODAL -->
+    <div id="buyModal" class="modal-overlay">
+        <div class="modal-content">
+            <i class="ph ph-x close-modal" onclick="closeModal()"></i>
+            
+            <!-- FORM SECTION -->
+            <div id="buyFormSection">
+                <h3 class="modal-title">Secure Order</h3>
+                <div class="product-info">
+                    <span id="modalProductName" class="product-name">Product Name</span>
+                    <span id="modalProductPrice" class="product-price">₹0</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" id="userName" class="form-input" placeholder="e.g. Rahul Sharma">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" id="userEmail" class="form-input" placeholder="e.g. rahul@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Payment Method</label>
+                    <select id="paymentMode" class="form-select">
+                        <option value="UPI">UPI (GPay/PhonePe/Paytm)</option>
+                        <option value="Bank Transfer">Bank Transfer (IMPS/NEFT)</option>
+                    </select>
+                </div>
+                
+                <button onclick="submitBuyForm()" class="buy-submit-btn">Send Request <i class="ph ph-paper-plane-right"></i></button>
+            </div>
+
+            <!-- THANK YOU SECTION (Hidden initially) -->
+            <div id="buySuccessSection" class="thank-you-message">
+                <i class="ph ph-check-circle check-icon"></i>
+                <h3 class="modal-title">Request Sent!</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Redirecting to WhatsApp to complete your order...</p>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // --- 1. SMOOTH SCROLL ---
-        const lenis = new Lenis();
+        // --- 1. SMOOTH SCROLL (Physically Weighted) ---
+        const lenis = new Lenis({
+            lerp: 0.03, // Lower = smoother, heavier feel
+            wheelMultiplier: 0.9, 
+            smoothWheel: true
+        });
         function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
         requestAnimationFrame(raf);
 
-        // --- 2. ADVANCED CINEMATIC PRELOADER & VISIBILITY FIX ---
+        // --- 2. ADVANCED CINEMATIC PRELOADER ---
         window.onload = () => {
-            // Set initial states to avoid FOUC (Flash of Unstyled Content)
             gsap.set(".navbar", { y: -50, opacity: 0 });
-            gsap.set(".hero-content > *", { y: 50, opacity: 0 });
+            gsap.set(".hero-content > *", { y: 100, opacity: 0 });
 
             const tl = gsap.timeline();
 
-            // Sequence: STRATEGY -> DESIGN -> CODE
-            tl.to("#seq-1", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" })
-              .to("#seq-1", { opacity: 0, y: -20, duration: 0.5, delay: 0.3 })
-              
-              .to("#seq-2", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" })
-              .to("#seq-2", { opacity: 0, y: -20, duration: 0.5, delay: 0.3 })
-              
-              .to("#seq-3", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" })
-              .to("#seq-3", { opacity: 0, y: -20, duration: 0.5, delay: 0.3 })
+            tl.to("#seq-1", { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" })
+              .to("#seq-1", { opacity: 0, y: -20, duration: 0.6, delay: 0.2 })
+              .to("#seq-2", { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" })
+              .to("#seq-2", { opacity: 0, y: -20, duration: 0.6, delay: 0.2 })
+              .to("#seq-3", { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" })
+              .to("#seq-3", { opacity: 0, y: -20, duration: 0.6, delay: 0.2 })
 
-            // Reveal Name and Progress Bar
+              // Name Reveal
               .to(".final-reveal", { opacity: 1, duration: 0.1 })
-              .to(".name-text", { y: 0, duration: 1, ease: "power4.out" })
-              .to(".progress-bar", { width: "100%", duration: 1, ease: "expo.inOut" }, "<")
+              .to(".name-text", { y: 0, duration: 1.2, ease: "power4.out" })
+              .to(".progress-bar", { width: "100%", duration: 1.2, ease: "expo.inOut" }, "<")
               
-            // Slide Preloader Up
-              .to(".preloader", { yPercent: -100, duration: 1.2, ease: "power4.inOut", delay: 0.5 })
+              // Slide Up
+              .to(".preloader", { 
+                  yPercent: -100, 
+                  duration: 1.5, 
+                  ease: "power4.inOut", 
+                  delay: 0.4 
+              })
             
-            // Site Reveal
-              .to(".navbar", { y: 0, opacity: 1, duration: 1, ease: "power3.out" }, "-=0.5")
+              // Content Entry
+              .to(".navbar", { y: 0, opacity: 1, duration: 1.2, ease: "power3.out" }, "-=0.8")
               .to(".hero-content > *", { 
-                  y: 0, opacity: 1, duration: 1, stagger: 0.15, ease: "power3.out" 
-              }, "-=0.8");
+                  y: 0, opacity: 1, duration: 1.4, stagger: 0.1, ease: "power4.out" 
+              }, "-=1");
+            
+            // Check Visit for Greeting
+            checkVisit();
         };
 
         // --- 3. CURSOR FOLLOWER ---
@@ -651,8 +893,9 @@
         });
 
         function animateCursor() {
-            followerX += (mouseX - followerX) * 0.1;
-            followerY += (mouseY - followerY) * 0.1;
+            // Lower easing factor for smoother lag
+            followerX += (mouseX - followerX) * 0.08; 
+            followerY += (mouseY - followerY) * 0.08;
             follower.style.transform = `translate(${followerX}px, ${followerY}px) translate(-50%, -50%)`;
             requestAnimationFrame(animateCursor);
         }
@@ -665,11 +908,11 @@
             });
             el.addEventListener('mouseleave', () => {
                 follower.style.width = '20px'; follower.style.height = '20px';
-                follower.style.background = 'rgba(255,255,255,0.05)';
+                follower.style.background = 'rgba(255,255,255,0.03)';
             });
         });
 
-        // --- 4. THREE.JS BACKGROUND (Dynamic Ocean) ---
+        // --- 4. THREE.JS (Slow Motion Ocean) ---
         const canvas = document.querySelector('#webgl-canvas');
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
@@ -678,10 +921,8 @@
         const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
 
-        // RESPONSIVE PARTICLE COUNT
         const isMobile = window.innerWidth < 768;
         const count = isMobile ? 1500 : 4000;
-        
         const geometry = new THREE.BufferGeometry();
         const positions = new Float32Array(count * 3);
         const colors = new Float32Array(count * 3);
@@ -689,7 +930,6 @@
         let i = 0; const sep = 3; 
         const rows = isMobile ? 35 : 70; 
         const cols = isMobile ? 30 : 60;
-        
         const color1 = new THREE.Color(0x3b82f6);
         const color2 = new THREE.Color(0x8b5cf6);
 
@@ -699,11 +939,7 @@
                 positions[i+1] = 0; 
                 positions[i+2] = (z - rows/2) * sep; 
                 
-                // Init colors
-                colors[i] = color1.r;
-                colors[i+1] = color1.g;
-                colors[i+2] = color1.b;
-
+                colors[i] = color1.r; colors[i+1] = color1.g; colors[i+2] = color1.b;
                 i += 3;
             }
         }
@@ -719,19 +955,17 @@
         let time = 0;
         function animate() {
             requestAnimationFrame(animate);
-            time += 0.03;
+            time += 0.005; // Much slower for "breathing" effect
             const positions = particles.geometry.attributes.position.array;
             const colors = particles.geometry.attributes.color.array;
             
             let i = 0;
             for (let x = 0; x < cols; x++) {
                 for (let z = 0; z < rows; z++) {
-                    // Smoother wave
                     const y = Math.sin((x + time) * 0.3) * 3 + Math.sin((z + time * 0.5) * 0.3) * 3;
                     positions[i+1] = y;
                     
-                    // Color mix based on height
-                    const mix = (y + 6) / 12; // Normalize roughly
+                    const mix = (y + 6) / 12; 
                     colors[i] = color1.r * (1-mix) + color2.r * mix;
                     colors[i+1] = color1.g * (1-mix) + color2.g * mix;
                     colors[i+2] = color1.b * (1-mix) + color2.b * mix;
@@ -741,10 +975,7 @@
             }
             particles.geometry.attributes.position.needsUpdate = true;
             particles.geometry.attributes.color.needsUpdate = true;
-            
-            // Mouse interaction
-            particles.rotation.y = (mouseX / window.innerWidth - 0.5) * 0.1;
-            
+            particles.rotation.y = (mouseX / window.innerWidth - 0.5) * 0.05; // Subtle rotation
             renderer.render(scene, camera);
         }
         animate();
@@ -754,32 +985,50 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
 
-        // --- 5. SCROLL REVEAL ANIMATIONS ---
+        // --- 5. SCROLL REVEAL ANIMATIONS (Batching for performance) ---
         gsap.utils.toArray('.reveal-text').forEach(element => {
             gsap.fromTo(element, 
-                { y: 50, opacity: 0 },
+                { y: 80, opacity: 0 },
                 {
                     scrollTrigger: {
                         trigger: element,
-                        start: "top 85%",
+                        start: "top 90%", // Trigger slightly earlier
                         toggleActions: "play none none reverse"
                     },
                     y: 0,
                     opacity: 1,
-                    duration: 1,
-                    ease: "power3.out"
+                    duration: 1.5,
+                    ease: "power4.out" // Smoother easing
                 }
             );
         });
 
-        // --- 6. NAVBAR SCROLL ---
+        // Staggered Project Cards
+        ScrollTrigger.batch(".project-card", {
+            start: "top 85%",
+            onEnter: batch => gsap.to(batch, {
+                opacity: 1, 
+                y: 0, 
+                stagger: 0.2, 
+                duration: 1.2, 
+                ease: "power4.out",
+                overwrite: true
+            }),
+            onLeaveBack: batch => gsap.to(batch, {
+                opacity: 0, 
+                y: 50, 
+                overwrite: true
+            })
+        });
+
+        // --- 6. NAVBAR ---
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('.navbar');
             if (window.scrollY > 50) nav.classList.add('scrolled');
             else nav.classList.remove('scrolled');
         });
 
-        // --- 7. TILT EFFECT ---
+        // --- 7. TILT ---
         const tiltCard = document.getElementById('tiltCard');
         if(tiltCard) {
             tiltCard.addEventListener('mousemove', (e) => {
@@ -797,29 +1046,127 @@
             });
         }
 
-        // --- 8. TIME UPDATE ---
+        // --- 8. TIME ---
         function updateTime() {
             const now = new Date();
             document.getElementById('time').textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         }
         setInterval(updateTime, 1000); updateTime();
 
-        // --- 9. WHATSAPP DYNAMIC MESSAGE ---
+        // --- 9. WHATSAPP & BUY FUNCTIONALITY ---
+        const phone = "919120920817";
+
         function openWhatsApp() {
-            const phone = "919120920817";
             const messages = [
-                "Hello PIXCEL YASH, I just saw your portfolio and I am very impressed. I want to discuss a potential project with you.",
-                "Hi PIXCEL YASH, I am looking for a developer to build a premium website. Are you available for hire?",
-                "Hey, I need a modern website for my business and loved your work. Let's talk details.",
-                "Hi there, I have a vision for a digital product and need your expertise to build it.",
-                "Hello, I'd like to hire you for a freelance web development project. Please let me know your availability."
+                "Hello PIXCEL YASH, I just saw your portfolio and I am very impressed.",
+                "Hi PIXCEL YASH, I am looking for a developer to build a premium website.",
             ];
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
             const url = `https://wa.me/${phone}?text=${encodeURIComponent(randomMessage)}`;
             window.open(url, '_blank');
         }
 
+        // --- 10. DYNAMIC GREETING ---
+        function checkVisit() {
+            const hasVisited = localStorage.getItem('pixcel_visited');
+            const greetingElement = document.getElementById('dynamicGreeting');
+            
+            if (hasVisited) {
+                greetingElement.textContent = "Welcome back! Good to see you again.";
+            } else {
+                greetingElement.textContent = "Thank you for visiting PIXCEL YASH.";
+                localStorage.setItem('pixcel_visited', 'true');
+            }
+        }
+
+        // --- 11. MOBILE MENU TOGGLE ---
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+            
+            // Toggle body scroll
+            if(menu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Stagger reveal links
+            const links = menu.querySelectorAll('.mobile-link');
+            if(menu.classList.contains('active')) {
+                gsap.to(links, {y: 0, opacity: 1, duration: 0.5, stagger: 0.1, delay: 0.3});
+            } else {
+                gsap.to(links, {y: 20, opacity: 0, duration: 0.3});
+            }
+        }
+
+        // --- 12. BUY MODAL LOGIC ---
+        let currentProduct = "";
+        let currentPrice = "";
+
+        function openBuyModal(name, price) {
+            const modal = document.getElementById('buyModal');
+            const formSection = document.getElementById('buyFormSection');
+            const successSection = document.getElementById('buySuccessSection');
+            
+            // Set Data
+            document.getElementById('modalProductName').innerText = name;
+            document.getElementById('modalProductPrice').innerText = "₹" + price;
+            currentProduct = name;
+            currentPrice = price;
+
+            // Reset View
+            formSection.style.display = 'block';
+            successSection.style.display = 'none';
+            document.getElementById('userName').value = '';
+            document.getElementById('userEmail').value = '';
+
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('buyModal').classList.remove('active');
+        }
+
+        function submitBuyForm() {
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            const mode = document.getElementById('paymentMode').value;
+
+            if(!name || !email) {
+                alert("Please fill in your Name and Email.");
+                return;
+            }
+
+            // Show Success UI
+            const formSection = document.getElementById('buyFormSection');
+            const successSection = document.getElementById('buySuccessSection');
+
+            // Animate transition
+            gsap.to(formSection, {opacity: 0, duration: 0.3, onComplete: () => {
+                formSection.style.display = 'none';
+                successSection.style.display = 'block';
+                gsap.fromTo(successSection, {opacity: 0, scale: 0.8}, {opacity: 1, scale: 1, duration: 0.5, ease: "back.out"});
+            }});
+
+            // Construct Message
+            const message = `Hello PIXCEL YASH, \n\nI want to purchase the *${currentProduct}* (₹${currentPrice}).\n\nHere are my details:\nName: ${name}\nEmail: ${email}\nPayment Mode Preference: ${mode}\n\nPlease share the payment details.`;
+            
+            // Delay redirect slightly for UX
+            setTimeout(() => {
+                const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+                window.open(url, '_blank');
+                // Close modal after some time
+                setTimeout(closeModal, 2000);
+            }, 1500);
+        }
+
+        // Close modal if clicked outside
+        document.getElementById('buyModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('buyModal')) {
+                closeModal();
+            }
+        });
     </script>
 </body>
 </html>
-
